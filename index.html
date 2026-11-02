@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Zechariah Vieri anak Sari, Computer Science (Networking) student at UNIMAS.">
+  <title>Zechariah Vieri | Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <button id="menu-toggle" class="header-btn menu-toggle" type="button"
+              aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+        <span id="menu-icon" aria-hidden="true">☰</span>
+      </button>
+
+      <nav aria-label="Main navigation">
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" class="header-btn" type="button" aria-label="Switch to dark mode">
+        <span id="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section id="home" class="section hero">
+      <div class="container">
+        <!--
+          ===== YOUR PICTURE =====
+          1. Save your photo in the SAME folder as this index.html file.
+          2. Name it mypicture.jpg (or change the src below to your file name,
+             for example src="me.png").
+          3. A square photo looks best.
+          4. Change the alt text to describe your photo.
+        -->
+        <img class="profile" src="mypicture.jpg" width="180" height="180"
+             alt="Photo of Zechariah Vieri anak Sari">
+        <p class="greeting">Welcome to my portfolio</p>
+        <h1>Zechariah Vieri anak Sari</h1>
+        <p class="lead">Computer Science and Information Technology (Networking) student at UNIMAS.</p>
+        <p class="actions">
+          <a class="btn btn-primary" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Contact me</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="filters" role="group" aria-label="Filter projects by category">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-btn" data-filter="systems" aria-pressed="false">Systems and Security</button>
+          <button type="button" class="filter-btn" data-filter="programming" aria-pressed="false">Programming</button>
+          <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+        </div>
+        <p id="project-count" class="project-count" role="status"></p>
+
+        <div class="project-list">
+          <article class="project" data-category="systems">
+            <div class="project-head">
+              <p class="kind"><span aria-hidden="true">🌱</span> Systems and Security</p>
+              <h3>Green and Energy-Efficient Data Centre Management</h3>
+            </div>
+            <div class="project-body">
+              <p>A system management report on Calibarn Data Centre Sdn Bhd, a colocation data centre near Kuching that hosts servers for about 50 business and government clients. The centre faces rising electricity costs, cooling systems more than ten years old, and clients who ask for greener operations. My part of the report looks at how these problems can be managed.</p>
+              <p class="tools">Type: Report assignment (case study)</p>
+            </div>
+          </article>
+
+          <article class="project" data-category="systems">
+            <div class="project-head">
+              <p class="kind"><span aria-hidden="true">🔒</span> Systems and Security</p>
+              <h3>Password Guessing Attack: System Architecture and Security</h3>
+            </div>
+            <div class="project-body">
+              <p>A group presentation on how password guessing attacks work and how a system protects against them. It covers password protection and authentication layers, multi-factor authentication (MFA), AI/ML-based suspicious login detection, and mitigation and response. I explained the system architecture, and our group divided the presentation parts between members.</p>
+              <p class="tools">Type: Group project (presentation)</p>
+            </div>
+          </article>
+
+          <article class="project" data-category="programming">
+            <div class="project-head">
+              <p class="kind"><span aria-hidden="true">☕</span> Programming</p>
+              <h3>Java Badge Management and Validation</h3>
+            </div>
+            <div class="project-body">
+              <p>A Java project made of three parts: BadgeManager, BadgeValidator and the Badgeable interface. In my code presentation I explained how the components work together and the difference between inheritance and interfaces.</p>
+              <p class="tools">Tools: Java, Object-Oriented Programming</p>
+            </div>
+          </article>
+
+          <article class="project" data-category="programming">
+            <div class="project-head">
+              <p class="kind"><span aria-hidden="true">🐍</span> Programming</p>
+              <h3>eDirectFarm Samarahan Application</h3>
+            </div>
+            <div class="project-body">
+              <p>A Python application that supports agricultural activities by connecting farmers, buyers, coordinators and drivers. It manages produce information, customer orders, delivery, and payment settlement and reports, using object-oriented programming principles.</p>
+              <p class="tools">Tools: Python, Object-Oriented Programming</p>
+            </div>
+          </article>
+
+          <article class="project" data-category="web">
+            <div class="project-head">
+              <p class="kind"><span aria-hidden="true">🌐</span> Web</p>
+              <h3>Personal Portfolio Website</h3>
+            </div>
+            <div class="project-body">
+              <p>This website. It works on mobile, tablet and desktop, has a dark mode, a project filter and a checked contact form, and is written without any framework.</p>
+              <p class="tools">Tools: HTML, CSS, JavaScript</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About Me</h2>
+        <div class="card about-box">
+          <p>
+            Hello, I am Zechariah Vieri anak Sari, a student in the Computer Science and
+            Information Technology (Networking) programme at UNIMAS. I was born in Miri and
+            lived there until I finished my SPM, after which I moved to Kuching. I studied at
+            SK Senadin and SMK Pujut in Miri, took my diploma at Politeknik Kuching, and I am
+            now working towards my degree at UNIMAS. Outside of class, I enjoy playing video
+            games and watching movies, and my favourite foods are Laksa Sarawak, Kasam, Pansuh,
+            Tempoyak, pizza and burger.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2>Contact</h2>
+
+        <div class="card contact-box">
+          <p><span aria-hidden="true">✉️</span> Email:
+            <a href="mailto:viezech92@gmail.com">viezech92@gmail.com</a>
+          </p>
+          <!-- Phone number: if you change it, change BOTH the text and the href="tel:..." -->
+          <p><span aria-hidden="true">📞</span> Phone:
+            <a href="tel:+60174828350">+60 17-482 8350</a>
+          </p>
+        </div>
+
+        <form id="contact-form" class="card" novalidate>
+          <h3><span aria-hidden="true">💬</span> Send me a message</h3>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+            <p id="name-error" class="error"></p>
+          </div>
+          <div class="field">
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+            <p id="email-error" class="error"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" maxlength="500" required aria-describedby="message-count message-error"></textarea>
+            <p id="message-count" class="count">0 / 500 characters</p>
+            <p id="message-error" class="error"></p>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p id="form-success" class="success" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button id="back-to-top" class="btn back-to-top" type="button" aria-label="Back to top" hidden>
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
